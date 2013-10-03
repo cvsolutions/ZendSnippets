@@ -1,0 +1,43 @@
+{
+	"name" : "cvsolutions/ZendSnippets",
+	"description" : "Zend Framework 2 Snippets.",
+	"type" : "zf2-module",
+	"authors" : [{
+			"name" : "Concetto Vecchio",
+			"email" : "info@cvsolutions.it",
+			"homepage" : "http://cvsolutions.it",
+			"role" : "Developer"
+		}
+	],
+	"keywords" : [
+		"zf2",
+		"Zend Snippets",
+		"cvsolutions"
+	],
+	"homepage" : "https://github.com/cvsolutions/ZendSnippets",
+	"license" : [
+		"BSD-3-Clause"
+	],
+	"require" : {
+		"php" : ">=5.3.3",
+		"zendframework/zendframework" : "2.*"
+	},
+	"autoload" : {
+		"psr-0" : {
+			"ZendSnippets" : "src"
+		},
+		"classmap" : [
+			"./Module.php"
+		]
+	},
+	"minimum-stability" : "beta",
+	"support" : {
+		"email" : "info@cvsolutions.it"
+	},
+	"repositories" : [{
+			"name" : "ZendSnippets",
+			"type" : "git",
+			"url" : "https://github.com/cvsolutions/ZendSnippets.git"
+		}
+	]
+}
