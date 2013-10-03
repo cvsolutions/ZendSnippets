@@ -1,5 +1,5 @@
 {
-	"name" : "cvsolutions/ZendSnippets",
+	"name" : "cvsolutions/zend-snippets",
 	"description" : "Zend Framework 2 Snippets.",
 	"type" : "zf2-module",
 	"authors" : [{
