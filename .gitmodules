@@ -1,3 +1,3 @@
-[submodule "EmailZF2"]
-    path = EmailZF2
+[submodule "src/EmailZF2"]
+    path = src/EmailZF2
     url = git://github.com/vikey89/EmailZF2.git
