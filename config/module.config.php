@@ -1,16 +1,10 @@
 <?php
-/**
- * 
- * @package ZfSnippets
- */
 return array(
     'controllers' => array(
         'invokables' => array(
             'ZfSnippets\Controller\ZfSnippets' => 'ZfSnippets\Controller\ZfSnippetsController',
         ),
     ),
-
-    // The following section is new and should be added to your file
     'router' => array(
         'routes' => array(
             'zfsnippets' => array(
@@ -38,4 +32,3 @@ return array(
         ),
     ),
 );
-?>

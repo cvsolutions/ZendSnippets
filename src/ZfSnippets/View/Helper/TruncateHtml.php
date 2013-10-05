@@ -11,8 +11,8 @@ use Zend\View\Helper\AbstractHelper;
 * @category Helper
 * @package  ZfSnippets
 * @author   Concetto Vecchio <info@cvsolutions.it>
-* @license  New BSD License
-* @link     
+* @license  http://www.opensource.org/licenses/mit-license.php  MIT License
+* @link     http://www.cvsolutions.it
 */
 class TruncateHtml extends AbstractHelper
 {
