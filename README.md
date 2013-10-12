@@ -6,14 +6,15 @@ Zend Framework 2 Snippets
 - (Slug) clean url generator
 - (TruncateHtml) This truncates a variable to a character length
 
-Installazione
+Installation
 ------------
-Per l'installazione usa composer [composer](http://getcomposer.org "composer - package manager").
+Using Composer (recommended) [composer](http://getcomposer.org "composer - package manager").
 
 ```sh
+curl -s https://getcomposer.org/installer | php --
 php composer.phar require cvsolutions/zend-snippets:dev-master
 ```
-Se avete composer installato:
+If you have installed composer:
 ```sh
 composer require cvsolutions/zend-snippets:dev-master
 ```
