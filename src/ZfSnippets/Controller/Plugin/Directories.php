@@ -1,5 +1,5 @@
 <?php
-namespace ZfSnippets\Plugin;
+namespace ZfSnippets\Controller\Plugin;
 
 use Zend\Mvc\Controller\Plugin\AbstractPlugin;
 
