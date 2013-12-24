@@ -5,6 +5,7 @@ Zend Framework 2 Snippets
 
 - (Slug) clean url generator
 - (TruncateHtml) This truncates a variable to a character length
+- (Directories) Delete files and folders
 
 Installation
 ------------
