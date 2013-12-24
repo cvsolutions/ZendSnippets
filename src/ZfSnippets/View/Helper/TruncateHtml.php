@@ -4,16 +4,9 @@ namespace ZfSnippets\View\Helper;
 use Zend\View\Helper\AbstractHelper;
 
 /**
-* TruncateHtml
-*
-* @uses     AbstractHelper
-*
-* @category Helper
-* @package  ZfSnippets
-* @author   Concetto Vecchio <info@cvsolutions.it>
-* @license  http://www.opensource.org/licenses/mit-license.php  MIT License
-* @link     http://www.cvsolutions.it
-*/
+ * Class TruncateHtml
+ * @package ZfSnippets\View\Helper
+ */
 class TruncateHtml extends AbstractHelper
 {
     const _MBSTRING = 'UTF-8';
@@ -23,20 +16,15 @@ class TruncateHtml extends AbstractHelper
     const _UTF8_MODIFIER = 'u';
 
     /**
-     * __invoke
-     * 
-     * @param mixed  $string      input string.
-     * @param int    $length      length of truncated text.
-     * @param string $etc         end string.
-     * @param mixed  $break_words truncate at word boundary.
-     * @param mixed  $middle      truncate in the middle of text.
-     *
-     * @access public
-     *
-     * @return mixed Value.
+     * @param $string
+     * @param int $length
+     * @param string $etc
+     * @param bool $break_words
+     * @param bool $middle
+     * @return mixed|string
      */
-    public function __invoke($string, $length = 80, $etc = '...', $break_words = false, $middle = false) {
-
+    public function __invoke($string, $length = 80, $etc = '...', $break_words = false, $middle = false)
+    {
         if ($length == 0) return '';
 
         if (self::_MBSTRING) {
@@ -51,7 +39,7 @@ class TruncateHtml extends AbstractHelper
                 if (!$middle) {
                     return mb_substr($string, 0, $length, self::_CHARSET) . $etc;
                 }
-                return mb_substr($string, 0, $length / 2, self::_CHARSET) . $etc . mb_substr($string, - $length / 2, $length, self::_CHARSET);
+                return mb_substr($string, 0, $length / 2, self::_CHARSET) . $etc . mb_substr($string, -$length / 2, $length, self::_CHARSET);
             }
             return $string;
         }
@@ -66,9 +54,9 @@ class TruncateHtml extends AbstractHelper
             if (!$middle) {
                 return substr($string, 0, $length) . $etc;
             }
-            return substr($string, 0, $length / 2) . $etc . substr($string, - $length / 2);
+            return substr($string, 0, $length / 2) . $etc . substr($string, -$length / 2);
         }
         return $string;
-    } 
+    }
 
 }
